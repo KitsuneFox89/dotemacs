@@ -3,9 +3,12 @@
 
 ; Load color theme
 (load-theme 'zenburn t)
-
 ; No tool bar
-(tool-bar-mode -1)
+(setq initial-scratch-message "")
+(setq inhibit-startup-message t)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
 
 (load-library "cmake.el")
 
@@ -14,7 +17,6 @@
 (global-nlinum-mode 1)
 
 (auto-compression-mode 1)
-(setq inhibit-startup-message t)
 
 ; No tabs
 (setq-default indent-tabs-mode nil)
