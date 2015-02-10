@@ -5,6 +5,10 @@
    zenburn-theme
    cuda-mode
    nlinum
+   cmake-mode
+   cmake-font-lock
+   company
+   cpputils-cmake
   ) "a list of packages to ensure are installed at launch."
 )
 
@@ -36,3 +40,4 @@
   (dolist (p required-packages)
     (when (not (package-installed-p p))
       (package-install p))))
+
