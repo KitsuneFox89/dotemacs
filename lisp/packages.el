@@ -9,7 +9,9 @@
    cmake-font-lock
    company
    cpputils-cmake
-  ) "a list of packages to ensure are installed at launch."
+   flycheck
+   yaml-mode
+  ) "A list of packages to ensure are installed at launch."
 )
 
 (require 'package)
